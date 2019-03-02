@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startOption"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamemen1"
+    android:orientation="vertical"
+    tools:context="com.example.akin.connectfour.StartOptions">
+
+    <TextView
+        android:id="@+id/oyun_alani_textView"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="  GameBoard(4-40):"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/oyun_alani"
+        android:layout_width="229dp"
+        android:layout_height="35dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="number"
+        android:textAlignment="viewStart" />
+
+    <ToggleButton
+        android:id="@+id/oyuntipi"
+        android:layout_width="229dp"
+        android:layout_height="47dp"
+
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="ToggleButton"
+        android:textOff="Player vs Computer"
+        android:textOn="Player vs Player" />
+
+    <TextView
+        android:id="@+id/standbytime"
+        android:layout_width="229dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/bottom_bar"
+        android:text="STANDBY TIME:"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="229dp"
+        android:layout_height="47dp"
+
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/timeoffon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton" />
+
+        <EditText
+            android:id="@+id/edittime"
+            android:layout_width="30dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="EXİT" />
+
+        <Button
+            android:id="@+id/oyuna_basla"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Start" />
+    </LinearLayout>
+
+</LinearLayout>

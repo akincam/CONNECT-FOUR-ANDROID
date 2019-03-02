@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamemen1"
+    tools:context="com.example.akin.connectfour.GameScreenActivity">
+
+    <Button
+        android:id="@+id/e1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <HorizontalScrollView
+        android:id="@+id/horScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Undo"
+        android:layout_marginTop="60dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <ScrollView
+            android:id="@+id/vertScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></GridLayout>
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Undo"
+        android:layout_toStartOf="@+id/Undo"
+        android:background="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Undo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_orange_light" />
+
+    <GridLayout
+        android:id="@+id/imageB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Undo"
+        android:layout_toRightOf="@+id/Undo">
+
+    </GridLayout>
+
+
+</RelativeLayout>
